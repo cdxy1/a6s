@@ -1,0 +1,16 @@
+{
+  "name": "a6s",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "cdxy",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
