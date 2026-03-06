@@ -8,7 +8,6 @@ export const addUser = (req, res) => {
     let jsonData = JSON.parse(data)
 
     jsonData.inbounds[0].users.push({"name": req.body.username, "flow": "xtls-rprx-vision", "uuid": generateUUID()})
-    console.log(jsonData.inbounds[0].tls)
     jsonData.inbounds[0].tls.reality.short_id.push(generateShortId())
 
     const stingData = JSON.stringify(jsonData, null, 2)
