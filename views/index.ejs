@@ -4,9 +4,20 @@
         <%- include("partials/head") %>
     </head>
     <body>
-        <%- include("partials/header") %>
-        <p>
-            Pizdec
-        </p>
+        <%- include("partials/form") %>
+        <table>
+            <tr>
+                <th>name</th>
+                <th>uuid</th>
+                <th>short id</th>
+            </tr>
+                <% for (let key in data) { %>
+                    <tr>
+                        <td><%= key %></td>
+                        <td><%= data[key].uuid %></td>
+                        <td><%= data[key].shortId %></td>
+                    </tr>
+                <% } %>
+        </table>
     </body>
 </html>
